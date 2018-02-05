@@ -16,14 +16,9 @@ $(function() {
     speed: 300,            
     timeout: 4000,          
     pager: true,           
-    nav: false,  
-    manualControls: '+',         
+    nav: false,        
     pauseControls: true,       
-    manualControls: "",     
-    namespace: "rslides", 
-    before: function(){
-      $("li.rslides2").html('-');
-    },   
+    namespace: "centered-btns"   
   });
   $('#myWizard').easyWizard();
 });
