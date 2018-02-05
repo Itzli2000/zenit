@@ -15,11 +15,15 @@ $(function() {
     auto: true,             
     speed: 300,            
     timeout: 4000,          
-    pager: false,           
-    nav: false,           
+    pager: true,           
+    nav: false,  
+    manualControls: '+',         
     pauseControls: true,       
     manualControls: "",     
-    namespace: "rslides",    
+    namespace: "rslides", 
+    before: function(){
+      $("li.rslides2").html('-');
+    },   
   });
   $('#myWizard').easyWizard();
 });
