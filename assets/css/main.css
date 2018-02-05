@@ -16,7 +16,8 @@ a, a:hover, a:link, a:active {
 .header {
   width: 930px;
   margin: 0 auto;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 13px; }
 
 .header p {
   height: 30px;
@@ -175,6 +176,41 @@ a.rslides_nav.rslides1_nav.next {
   background: #000;
   z-index: 2; }
 
+.easyWizardSteps {
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px; }
+
+.easyWizardSteps li {
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  color: #B0B1B3;
+  margin-right: 20px; }
+
+.easyWizardSteps li span {
+  font-size: 24px; }
+
+.easyWizardSteps li.current {
+  color: #000; }
+
+.easyWizardButtons {
+  overflow: hidden;
+  padding: 10px; }
+
+.easyWizardButtons button, .easyWizardButtons .submit {
+  cursor: pointer; }
+
+.easyWizardButtons .prev {
+  float: left; }
+
+.easyWizardButtons .next, .easyWizardButtons .submit {
+  float: right; }
+
 /*Grid container styles*/
 #gridSection {
   height: 510px;
@@ -246,6 +282,13 @@ a.rslides_nav.rslides1_nav.next {
 /*Footer styles*/
 footer {
   height: 35px;
-  background: #787878; }
+  background: #e6e6e6; }
+
+p.footerText {
+  font-size: 12px;
+  text-align: right;
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 5px; }
 
 /*# sourceMappingURL=main.css.map */

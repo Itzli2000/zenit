@@ -11,4 +11,5 @@ $(function() {
     manualControls: "",     
     namespace: "rslides",    
   });
+  $('#myWizard').easyWizard();
 });
