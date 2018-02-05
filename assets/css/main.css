@@ -1,6 +1,12 @@
+/*General styles*/
 body {
   font-family: 'Roboto', sans-serif; }
 
+a, a:hover, a:link, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+/*Main container styles*/
 #main {
   width: 100%;
   max-width: 1400px;
@@ -202,17 +208,44 @@ a.rslides_nav.rslides1_nav.next {
 
 .infoContainer .infoText {
   width: 215px;
-  font-size: 10px; }
+  font-size: 11px; }
 
 .infoContainer .googleText {
   text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  width: fit-content;
+  color: #984ad2; }
+
+.googleText:hover {
+  color: #73389F; }
+
+.contactInfo {
+  text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
-  color: #7a5297; }
+  letter-spacing: -0.7px; }
+
+.contactInfo a:hover {
+  color: #999999; }
+
+.contactInfo ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: right; }
+
+.contactInfo li {
+  list-style: none;
+  text-decoration: none;
+  padding: 2px 0; }
 
 /*Footer styles*/
 footer {
   height: 35px;
-  background: #e6e6e6; }
+  background: #787878; }
 
 /*# sourceMappingURL=main.css.map */
