@@ -1,3 +1,6 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
 #main {
   width: 100%;
   max-width: 1400px;
@@ -183,6 +186,30 @@ a.rslides_nav.rslides1_nav.next {
   height: 140px;
   width: 100%;
   background: #FFF;
+  font-size: 13px;
+}
+.infoContainer {
+  width: 900px;
+  height: 100%;
+  margin: 0 auto;
+}
+.infoContainer p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+.infoContainer h4 {
+  font-size: 16px;
+}
+.infoContainer .infoText {
+  width: 215px;
+  font-size: 10px;
+}
+.infoContainer .googleText {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: #7a5297;
 }
 /*Footer styles*/
 footer {
