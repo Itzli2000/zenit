@@ -11,5 +11,15 @@ $(function() {
     manualControls: "",     
     namespace: "rslides",    
   });
+  $(".infoSlides").responsiveSlides({
+    auto: true,             
+    speed: 300,            
+    timeout: 4000,          
+    pager: false,           
+    nav: false,           
+    pauseControls: true,       
+    manualControls: "",     
+    namespace: "rslides",    
+  });
   $('#myWizard').easyWizard();
 });
