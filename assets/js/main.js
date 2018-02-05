@@ -6,8 +6,8 @@ $(function() {
     pager: false,           
     nav: true,           
     pauseControls: true,    
-    prevText: "<",   
-    nextText: ">",       
+    prevText: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',   
+    nextText: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',       
     manualControls: "",     
     namespace: "rslides",    
   });
