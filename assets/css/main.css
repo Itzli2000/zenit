@@ -61,6 +61,10 @@ a, a:hover, a:link, a:active {
 .navbar {
   padding: 0; }
 
+.navbar-brand img {
+  height: auto;
+  width: 198px; }
+
 .nav-item a,
 .nav-item a:active,
 .nav-item a:link {
