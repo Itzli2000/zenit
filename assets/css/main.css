@@ -1,4 +1,5 @@
-#main {
+#main,
+#bodyContainer {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto; }
@@ -42,5 +43,64 @@
   margin: 0 auto;
   background: #f2f2f2;
   border-top: 1px solid #e0e0e0; }
+
+.navContainer {
+  width: 930px;
+  margin: 0 auto;
+  text-transform: uppercase; }
+
+.navbar {
+  padding: 0; }
+
+.nav-item a,
+.nav-item a:active,
+.nav-item a:link {
+  font-size: 0.7em;
+  font-weight: bold;
+  color: #000 !important;
+  padding: 0 !important; }
+
+.nav-item a:hover {
+  color: rgba(0, 0, 0, 0.5) !important; }
+
+.btnContainer {
+  width: 225px;
+  height: 60px;
+  font-size: 0.8em;
+  color: #e0e0e0; }
+
+.btnContainer p {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #797979; }
+
+.btnContainer p:first-child {
+  width: 80px; }
+
+.searchContainer {
+  width: 140px;
+  border-left: 6px solid #e0e0e0; }
+
+.searchContainer p:first-child {
+  width: 92px;
+  background: #494949; }
+
+.btnContainer i {
+  cursor: pointer;
+  width: 50px;
+  background: #000;
+  color: #FFF;
+  font-size: 18px; }
+
+/*Slider and form wizard styles*/
+#sliderContainer {
+  height: 680px;
+  background: #cccccc; }
 
 /*# sourceMappingURL=main.css.map */
