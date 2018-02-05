@@ -1,0 +1,47 @@
+#main {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+/*Header styles*/
+.header {
+  width: 930px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+.header p {
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 20px;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+}
+.header p:last-of-type {
+  border-right: none;
+}
+.header i {
+  width: 40px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.header a,
+.header a:active,
+.header a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #cccccc;
+}
+/*Navigation bar styles*/
+.navBar {
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  background: #f2f2f2;
+  border-top: 1px solid #e0e0e0;
+
+}
