@@ -100,7 +100,7 @@
 }
 /*Slider and form wizard styles*/
 #sliderContainer {
-  height: 680px;
+  height: 670px;
   background: #cccccc;
 }
 /*Slider buttons*/
@@ -166,4 +166,26 @@ a.rslides_nav.rslides1_nav.next {
   left: 0;
   background: #000;
   z-index: 2;
+}
+/*Grid container styles*/
+#gridSection {
+  height: 510px;
+  background: #f2f2f2;
+}
+.gridContainer {
+  width: 930px;
+  height: 490px;
+  margin: 0 auto;
+  background: #4d4d4d;
+}
+/*Info sectio styles*/
+#infoSection {
+  height: 140px;
+  width: 100%;
+  background: #FFF;
+}
+/*Footer styles*/
+footer {
+  height: 35px;
+  background: #e6e6e6;
 }
