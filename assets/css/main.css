@@ -199,15 +199,24 @@ a.rslides_nav.rslides1_nav.next {
   background: #000;
   color: #FFF; }
 
-#myWizard .control-group {
+#myWizard .prev {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 16px;
+  left: 25px; }
+
+#myWizard .form-group {
   display: inline-flex; }
 
 #myWizard .row {
   height: 40px; }
 
-#myWizard .control-group > * {
+#myWizard .form-group > * {
   height: 20px;
   padding: 0 32px; }
+
+#myWizard .form-group > label {
+  width: 115px; }
 
 #myWizard input {
   padding: 0 !important; }

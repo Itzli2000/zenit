@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
         $('#formbtn').prop('disabled',true);
       }
   });
-  $('input[type=date],input[type=select]').change(function() {
+  $('input[type=date],select').change(function() {
       if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
         console.log('yes');
         $('#formbtn').prop('disabled',false);
@@ -44,5 +44,8 @@ jQuery(document).ready(function($) {
       else {
         $('#formbtn').prop('disabled',true);
       }
+  });
+  $('#formbtn').click(function(){
+    $(this).prop('disabled',true);
   });
 });
