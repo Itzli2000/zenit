@@ -28,24 +28,43 @@ jQuery(document).ready(function($) {
   // if inputs are filled
   $('#formbtn').prop('disabled',true);
   $('input[type=text],input[type=password]').keyup(function() {
-      if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
-        console.log('yes');
-        $('#formbtn').prop('disabled',false);
-      }
-      else {
-        $('#formbtn').prop('disabled',true);
-      }
+    if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
+      console.log('yes');
+      $('#formbtn').prop('disabled',false);
+    }
+    else {
+      $('#formbtn').prop('disabled',true);
+    }
   });
   $('input[type=date],select').change(function() {
-      if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
-        console.log('yes');
-        $('#formbtn').prop('disabled',false);
-      }
-      else {
-        $('#formbtn').prop('disabled',true);
-      }
+    if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
+      console.log('yes');
+      $('#formbtn').prop('disabled',false);
+    }
+    else {
+      $('#formbtn').prop('disabled',true);
+    }
   });
   $('#formbtn').click(function(){
     $(this).prop('disabled',true);
   });
+  $('.submit').click(function(){
+    sending();
+  });
 });
+
+function sending(){
+  swal({
+    title: 'Información enviada!',
+    text: 'Pronto nos pondremos en contacto!',
+    type: 'success',
+    timer: 5000,
+    onOpen: () => {
+      swal.showLoading()
+    }
+  }).then((result) => {
+    if (result.dismiss === 'timer') {
+      console.log('I was closed by the timer')
+    }
+  })
+};
