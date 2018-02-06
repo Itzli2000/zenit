@@ -16,7 +16,7 @@
             var settings = $.extend( {
                 'stepClassName' : 'step',
                 'showSteps' : true,
-                'stepsText' : '{n}. {t}',
+                'stepsText' : '{n} {t}',
                 'showButtons' : true,
                 'buttonsClass' : '',
                 'prevButton' : '<i class="fa fa-angle-double-left" aria-hidden="true"></i>&nbsp;Regresar',
@@ -88,7 +88,7 @@
                     if(thisSettings.showButtons) {
                         paginationHtml = '<div class="easyWizardButtons">';
                             paginationHtml += '<button class="btn prev '+thisSettings.buttonsClass+' btn-light">'+thisSettings.prevButton+'</button>';
-                            paginationHtml += '<button class="btn next '+thisSettings.buttonsClass+'">'+thisSettings.nextButton+'</button>';
+                            paginationHtml += '<button id="formbtn" class="btn next '+thisSettings.buttonsClass+'">'+thisSettings.nextButton+'</button>';
                             paginationHtml += thisSettings.submitButton?'<button type="submit" class="btn btn-success submit '+thisSettings.submitButtonClass+'">'+thisSettings.submitButtonText+'</button>':'';
                         paginationHtml  += '</div>';
                         $paginationBloc = $(paginationHtml);
