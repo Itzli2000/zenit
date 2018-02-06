@@ -64,7 +64,7 @@ function sending(){
     }
   }).then((result) => {
     if (result.dismiss === 'timer') {
-      console.log('I was closed by the timer')
+      location.reload();
     }
   })
 };
