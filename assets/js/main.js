@@ -1,4 +1,5 @@
 $(function() {
+  // Main slider 
   $(".rslides").responsiveSlides({
     auto: true,             
     speed: 300,            
@@ -11,6 +12,7 @@ $(function() {
     manualControls: "",     
     namespace: "rslides",    
   });
+  // Grid info slider
   $(".infoSlides").responsiveSlides({
     auto: true,             
     speed: 300,            
@@ -20,6 +22,7 @@ $(function() {
     pauseControls: true,       
     namespace: "centered-btns"   
   });
+  // Form wizard handeler
   $('#myWizard').easyWizard();
 });
 
@@ -27,15 +30,21 @@ jQuery(document).ready(function($) {
   // Function to enable next button
   // if inputs are filled
   $('#formbtn').prop('disabled',true);
+  // Get inputs of form
   $('input[type=text],input[type=password]').keyup(function() {
+    // Validate if inputs are filled
     if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
       console.log('yes');
+      // Enable 'next' button
       $('#formbtn').prop('disabled',false);
     }
     else {
+      // If some input is empty
+      // button 'next' is disabled
       $('#formbtn').prop('disabled',true);
     }
   });
+  // Function to validate dates and select
   $('input[type=date],select').change(function() {
     if($('#evento').val()!= 0 && $('#tipo').val()!= 0 && $('#lugar').val()!= 0 && $('#asistencia').val()!= 0 && $('#entrada').val()!= 0 && $('#salida').val()!= 0) {
       console.log('yes');
@@ -53,6 +62,9 @@ jQuery(document).ready(function($) {
   });
 });
 
+
+// When button submit es clicker
+// Launch sweet alert message to thank user
 function sending(){
   swal({
     title: 'Información enviada!',
