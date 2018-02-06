@@ -92,21 +92,43 @@
       <div class="wizardContainer">
         <!-- Wizard form -->
         <form id="myWizard" type="get" action="" class="form-horizontal">
-          <section class="step" data-step-title="The first">
-            <div class="control-group">
-              <label class="control-label" for="inputEmail">Email</label>
-              <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email" class="input-xlarge" title="Email is required !" required >
+          <section class="step" data-step-title="PASO 1">
+            <div class="row justify-content-around">
+              <div class="control-group">
+                <input type="text" id="inputEmail" placeholder="Nombre del evento" class="input-xlarge" title="Email is required !" required >
+              </div>
+              <div class="control-group">
+                <select class="custom-select">
+                  <option selected>Tipo de evento</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="control-group">
+                <select class="custom-select">
+                  <option selected>Lugar del evento</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="control-group">
+                <input type="text" id="asistencia" placeholder="Asistencia esperada" class="input-xlarge">
               </div>
             </div>
-            <div class="control-group">
-              <label class="control-label" for="inputPassword">Password</label>
-              <div class="controls">
-                <input type="password" id="inputPassword" placeholder="Password" class="input-xlarge">
+            <div class="row justify-content-around">
+              <div class="control-group">
+                <label for="entrada"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Entrada</label>
+                <input type="date" id="entrada" name="entrada" placeholder="Entrada">
+              </div>
+              <div class="control-group">
+                <label for="salida"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Salida</label>
+                <input type="date" id="salida" name="salida" placeholder="Salida">
               </div>
             </div>
           </section>
-          <section class="step" data-step-title="The second">
+          <section class="step" data-step-title="PASO 2">
             <div class="control-group">
               <label class="control-label" for="inputUsername">Username</label>
               <div class="controls">
@@ -114,7 +136,21 @@
               </div>
             </div>
           </section>
-          <section class="step" data-step-title="The third">
+          <section class="step" data-step-title="PASO 3">
+            <div class="control-group">
+              <label class="control-label" for="inputFirstname">Firstname</label>
+              <div class="controls">
+                <input type="text" id="inputFirstname" placeholder="Firstname" class="input-xlarge">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="inputCity">City</label>
+              <div class="controls">
+                <input type="text" id="inputCity" placeholder="City" class="input-xlarge">
+              </div>
+            </div>
+          </section>
+          <section class="step" data-step-title="PASO 4">
             <div class="control-group">
               <label class="control-label" for="inputFirstname">Firstname</label>
               <div class="controls">
@@ -130,7 +166,7 @@
           </section>
         </form>
       </div>
-      <div class="bckNextButton"></div>
+      <div class="btn bckNextButton"></div>
     </div>
     <!-- Grid section -->
     <div id="gridSection" class="d-flex flex-column justify-content-center align-items-center">
@@ -152,13 +188,16 @@
             <img src="http://www.solomujeresm.com/wp-content/uploads/2017/06/publicidad-1.gif" alt="image">
           </div>
           <div class="grid-item-4">
+            <!-- Grid title -->
             <div class="titleContainer text-uppercase d-flex flex-column justify-content-center align-items-center">
               <h4>congresos & eventos</h4>
               <h5>que enamoran (equipo organizador)</h5>
             </div>
+            <!-- Grid image -->
             <div class="imageBig">
               <img src="https://images.unsplash.com/photo-1458891216473-4f26bb4eb40e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=47ca1f94ecbd3969bc5b948a6b4ec208&auto=format&fit=crop&w=750&q=80" style="height: 100%; width: auto;" alt="image">
             </div>
+            <!-- Grid info -->
             <div class="footContainer d-flex flex-column justify-content-between">
               <p>ETAPA de preparación.  Paso 3 Determinación del Equipo Organizador Para eventos de entre 800 y 1500 personas.</p>
               <div class="blogContainer text-uppercase">

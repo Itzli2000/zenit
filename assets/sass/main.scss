@@ -172,6 +172,10 @@ a.rslides_nav.rslides1_nav.next {
   background: #FFF;
   z-index: 3;
 }
+#myWizard {
+  position: relative !important;
+  height: 100%;
+}
 .bckNextButton {
   margin: 0 auto;
   width: 185px;
@@ -183,6 +187,31 @@ a.rslides_nav.rslides1_nav.next {
   left: 0;
   background: #000;
   z-index: 2;
+}
+#myWizard .next {
+  margin: 0 auto;
+  width: 174px;
+  height: 30px;
+  position: absolute;
+  bottom: -2px;
+  border-radius: 10px 10px 0 0;
+  right: 0;
+  left: 0;
+  background: #000;
+  color: #FFF;
+}
+#myWizard .control-group {
+  display: inline-flex;
+}
+#myWizard .row {
+  height: 40px;
+}
+#myWizard .control-group > * {
+  height: 20px;
+  padding: 0 32px;
+}
+#myWizard input {
+  padding: 0 !important;
 }
 .easyWizardSteps {list-style:none;width:100%;overflow:hidden;margin:0;padding:0;border-bottom:1px solid #ccc;margin-bottom:20px}
 .easyWizardSteps li {font-size:18px;display:inline-block;padding:10px;color:#B0B1B3;margin-right:20px;}

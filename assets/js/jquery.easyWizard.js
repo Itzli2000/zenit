@@ -19,11 +19,11 @@
                 'stepsText' : '{n}. {t}',
                 'showButtons' : true,
                 'buttonsClass' : '',
-                'prevButton' : '< Back',
-                'nextButton' : 'Next >',
+                'prevButton' : '<i class="fa fa-angle-double-left" aria-hidden="true"></i>&nbsp;Regresar',
+                'nextButton' : 'Siguiente&nbsp;<i class="fa fa-angle-double-right" aria-hidden="true"></i>',
                 'debug' : false,
                 'submitButton': true,
-                'submitButtonText': 'Submit',
+                'submitButtonText': 'Enviar&nbsp;<i class="fa fa-arrow-circle-right" aria-hidden="true"></i>',
                 'submitButtonClass': '',
                 before: function(wizardObj, currentStepObj, nextStepObj) {},
                 after: function(wizardObj, prevStepObj, currentStepObj) {},
@@ -76,7 +76,7 @@
                             $(this).find('input, textarea, select, button').attr('tabindex', '-1');
                         }
 
-                        stepText = thisSettings.stepsText.replace('{n}', '<span>'+step+'</span>');
+                        stepText = thisSettings.stepsText.replace('{n}', '');
                         stepText = stepText.replace('{t}', $(this).attr('data-step-title'));
                         $stepsHtml.append('<li'+(!index?' class="current"':'')+' data-step="'+step+'">'+stepText+'</li>');
                     });
@@ -87,9 +87,9 @@
 
                     if(thisSettings.showButtons) {
                         paginationHtml = '<div class="easyWizardButtons">';
-                            paginationHtml += '<button class="prev '+thisSettings.buttonsClass+'">'+thisSettings.prevButton+'</button>';
-                            paginationHtml += '<button class="next '+thisSettings.buttonsClass+'">'+thisSettings.nextButton+'</button>';
-                            paginationHtml += thisSettings.submitButton?'<button type="submit" class="submit '+thisSettings.submitButtonClass+'">'+thisSettings.submitButtonText+'</button>':'';
+                            paginationHtml += '<button class="btn prev '+thisSettings.buttonsClass+' btn-light">'+thisSettings.prevButton+'</button>';
+                            paginationHtml += '<button class="btn next '+thisSettings.buttonsClass+'">'+thisSettings.nextButton+'</button>';
+                            paginationHtml += thisSettings.submitButton?'<button type="submit" class="btn btn-success submit '+thisSettings.submitButtonClass+'">'+thisSettings.submitButtonText+'</button>':'';
                         paginationHtml  += '</div>';
                         $paginationBloc = $(paginationHtml);
                         $paginationBloc.css('clear', 'both');
